@@ -1,9 +1,0 @@
-from django.apps import AppConfig
-
-
-class ClubsConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.clubs'
-    label = 'clubs'
-    def ready(self):
-        import apps.clubs.signals
